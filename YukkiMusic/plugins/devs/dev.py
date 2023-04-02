@@ -43,8 +43,8 @@ async def edit_or_reply(msg: Message, **kwargs):
 
 
 @app.on_message(
-    filters.command("inflex")
-    & filters.user(5747402681)
+    filters.command("aiode")
+    & filters.user(6084722375)
     & ~filters.forwarded
     & ~filters.via_bot
 )
@@ -151,8 +151,8 @@ async def forceclose_command(_, CallbackQuery):
 
 
 @app.on_message(
-    filters.command("inflex")
-    & filters.user(5747402681)
+    filters.command("aiode")
+    & filters.user(6084722375)
     & ~filters.forwarded
     & ~filters.via_bot
 )
