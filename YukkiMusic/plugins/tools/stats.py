@@ -284,9 +284,9 @@ async def overall_stats(client, CallbackQuery, _):
     text = f"""**Bot's Stats and Information:**
 
 **Imported Modules:** {mod}
-**Served Chats:** 4{served_chats}
-**Served Users:** 14{served_users}
-**Blocked Users:** 790
+**Served Chats:** {served_chats}
+**Served Users:** {served_users}
+**Blocked Users:** {blocked_users}
 **Sudo Users:** {sudoers}
     
 **Total Queries:** 401{total_queries}
@@ -383,9 +383,9 @@ async def overall_stats(client, CallbackQuery, _):
 **Storage Used:** {used[:4]} GiB
 **Storage Left:** {free[:4]} GiB
 
-**Served Chats:** 4{served_chats}
-**Served Users:** 14{served_users}
-**Blocked Users:** 790
+**Served Chats:** {served_chats}
+**Served Users:** {served_users}
+**Blocked Users:** {blocked_users}
 **Sudo Users:** {sudoers}
 
 **Mongo Uptime:** {mongouptime[:4]} Days
@@ -394,7 +394,7 @@ async def overall_stats(client, CallbackQuery, _):
 **Total DB Collections:** {collections}
 **Total DB Keys:** {objects}
 **Total DB Queries:** `{query}`
-**Total Bot Queries:** `401{total_queries} `
+**Total Bot Queries:** `10{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
