@@ -286,7 +286,7 @@ async def overall_stats(client, CallbackQuery, _):
 **Imported Modules:** {mod}
 **Served Chats:** {served_chats}
 **Served Users:** {served_users}
-**Blocked Users:** {blocked_users}
+**Blocked Users:** {blocked}
 **Sudo Users:** {sudoers}
     
 **Total Queries:** 401{total_queries}
@@ -385,7 +385,7 @@ async def overall_stats(client, CallbackQuery, _):
 
 **Served Chats:** {served_chats}
 **Served Users:** {served_users}
-**Blocked Users:** {blocked_users}
+**Blocked Users:** {blocked}
 **Sudo Users:** {sudoers}
 
 **Mongo Uptime:** {mongouptime[:4]} Days
